@@ -40,5 +40,11 @@ return require('packer').startup({
         ---------------------
 
         use('nvim-tree/nvim-tree.lua')
+
+        ---------------------
+        -- LaTeX production--
+        ---------------------
+
+        use('lervag/vimtex')
     end,
 })
