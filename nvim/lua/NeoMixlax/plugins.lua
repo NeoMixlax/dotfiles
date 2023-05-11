@@ -46,5 +46,37 @@ return require('packer').startup({
         ---------------------
 
         use('lervag/vimtex')
+
+        ---------------------
+        --       LSP       --
+        ---------------------
+
+        use({
+            'neovim/nvim-lspconfig',
+            config = function()
+                require('NeoMixlax.plugins.lspconfig')
+            end,
+        })
+
+        ---------------------
+        -- Auto-Completion --
+        ---------------------
+
+        use({
+            'hrsh7th/nvim-cmp',
+            config = function()
+                require('NeoMixlax.plugins.nvim-cmp')
+            end,
+        })
+
+        use('hrsh7th/cmp-nvim-lsp') -- LSP source for nvim-cmp
+        
+        ---------------------
+        --    Snippets     --
+        ---------------------
+
+        use('L3MON4D3/LuaSnip')
+
+        use('saadparwaiz1/cmp_luasnip') -- LSP source for nvim-cmp
     end,
 })
