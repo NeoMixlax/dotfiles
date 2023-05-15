@@ -78,5 +78,16 @@ return require('packer').startup({
         use('L3MON4D3/LuaSnip')
 
         use('saadparwaiz1/cmp_luasnip') -- LSP source for nvim-cmp
+
+        ---------------------
+        --      Wiki       --
+        ---------------------
+
+        use({
+            'vimwiki/vimwiki',
+            config = function()
+                require('NeoMixlax.plugins.vimwiki')
+            end,
+        })
     end,
 })

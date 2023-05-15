@@ -6,6 +6,11 @@ end
 --Vanilla Keymaps --
 --------------------
 
+-- Default movements 1+ right
+-- map('n', 'ñ', 'l')
+-- map('n', 'l', 'k')
+-- map('n', 'k', 'j')
+
 -- Fix * (Keep the cursor position, don't move to next match)
 map('n', '*', '*N')
 
